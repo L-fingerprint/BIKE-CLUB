@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/htm">
+    <title>login</title>
+    <link rel="stylesheet" href="../stylesheets/reset.css">
+    <link rel="stylesheet" href="../stylesheets/login.css">
+    <link rel="stylesheet" href="../fonts/font-awesome.min.css">
+    <link href="http://cdn.webfont.youziku.com/webfonts/nomal/121649/45410/5b667c10f629d818d80f5a78.css" rel="stylesheet" type="text/css"/>
+    <link href="http://cdn.webfont.youziku.com/webfonts/nomal/121649/45817/5b667b3af629d818d80f5a77.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <div></div>
+    <div class="header">
+      <h1>Profile Login Form</h1>
+    </div>
+    <div class="content">
+      <div class="wrapper" id="join">
+        <div class="wrapper_con">
+          <div class="login_img"><img src="../images/profile.png" alt=""></div>
+          <form class="login_form" action="/login" method="post">
+            <h2>login</h2>
+            <p>
+              <label>Your email or username</label><i class="fa fa-user icon"></i>
+              <input type="text" placeholder="myusername or myemail@email.com" name="name"/>
+            </p>
+            <p>
+              <label>Your password</label><i class="fa fa-key icon"></i>
+              <input type="password" placeholder="eg:lxf1234" name="psd"/>
+            </p>
+            <p>
+              <input class="checkbox" type="checkbox"/>
+              <label>Keep me logged in</label>
+            </p>
+            <p class="p_btn">
+              <input class="button" type="submit" value="login"/>
+            </p>
+            <p class="p_link"><span>Not a member yet ?</span><span class="btn" onclick="signIn()">Join us</span></p>
+          </form>
+        </div>
+      </div>
+      <div class="wrapper wrapper_sign" id="sign">
+        <div class="wrapper_con">
+          <div class="login_img"><img src="../images/profile.png" alt=""></div>
+          <form class="login_form" action="/loginSign" method="post">
+            <h2>sign in</h2>
+            <p>
+              <label>Your email or username</label><i class="fa fa-user icon"></i>
+              <input type="text" placeholder="myusername" name="name"/>
+            </p>
+            <p>
+              <label>Your email</label><i class="fa fa-envelope icon"></i>
+              <input type="text" placeholder="eg:lxf1234@1234567" name="email"/>
+            </p>
+            <p>
+              <label>Your password</label><i class="fa fa-key icon"></i>
+              <input type="password" placeholder="eg:lxf1234" name="psd"/>
+            </p>
+            <p>
+              <label>Please confirm your password</label><i class="fa fa-key icon"></i>
+              <input type="password" placeholder="eg:lxf1234" name="psd"/>
+            </p>
+            <p class="p_btn">
+              <input class="button" type="submit" value="sing in"/>
+            </p>
+            <p class="p_link"><span>you are my one of the numbers now!</span></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>var join =document.getElementById("join");
+var sign =document.getElementById("sign");
+function  signIn() {
+    if(sign.style.display="none"){
+        join.style.display="none";
+        sign.style.display="block";
+    }
+}
+    </script>
+  </body>
+</html>

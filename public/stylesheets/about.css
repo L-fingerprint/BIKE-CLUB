@@ -1,0 +1,112 @@
+.box{
+    width: 96%;
+    margin: auto;
+}
+.bg{
+    float: left;
+    margin: 2rem 6%;
+}
+.circle{
+    position: relative;
+    background: red;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+}
+.img{
+    width:18rem;
+    height: 18rem;
+    border-radius: 50%;
+    transition: all 1.2s;
+    z-index: 99;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.box .img:before{
+    position: absolute;
+    display: block;
+    content: '';
+    width:18rem;
+    height: 18rem;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.circle:hover .img{
+    transform: scale(0.5) translateY(-6.4rem);
+}
+.icon {
+    position: absolute;
+    top:0;
+    width:18rem;
+    height: 18rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color:#fff;
+    z-index:-1;
+}
+.icon>h3{
+    margin:20rem 0 0 0;
+    font-size: 2rem;
+    text-align: center;
+}
+.icons{
+    font-size:0;
+    color:#fff;
+    margin-top: 2rem;
+}
+.icons i{
+    margin:0 1.6rem;
+    font-size:3rem;
+}
+@media (min-width: 960px){
+    .bg{
+        margin: 2rem 4%;
+    }
+}
+@media (max-width: 768px) {
+    .con h1{
+        font-size: 1.6rem;
+    }
+    .bg{
+        width: 90%;
+    }
+    .circle{
+        margin: auto;
+    }
+}
+
+.single>img{
+    width: 100%;
+}
+.single p{
+    margin: 2rem 0;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.single_icon {
+    position: relative;
+    color: #999999;
+    font-size: 1.2rem;
+}
+.single_icon i{
+    display: inline-block;
+    margin-right: 10px;
+}
+.single_icon span{
+    display: inline-block;
+    margin-right:  2rem;
+}
+.single p:last-child{
+    color:#999999;
+    font-size: 0.9rem;
+}
+#add{
+    position: absolute;
+    top: -2rem;
+    left: 30rem;
+    display: none;
+}
+

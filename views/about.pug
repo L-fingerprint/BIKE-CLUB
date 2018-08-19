@@ -1,0 +1,83 @@
+doctype html
+html
+    head
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="Content-Type" , content="text/html")
+        title DC BIKE
+        link(rel="shortcut icon", href="../images/bitbug_favicon.ico", type="image/x-icon")
+        link(rel="stylesheet" , type="text/css" , href="../stylesheets/reset.css")
+        link(type="text/css", rel="stylesheet" , href="../stylesheets/common.css")
+        link(rel="stylesheet" , type="text/css" , href="../stylesheets/about.css")
+        link(type="text/css", rel="stylesheet" , href="../stylesheets/image.css")
+        link(rel="stylesheet" type="text/css" href="../fonts/font-awesome.min.css")
+    body
+        span#top
+            i(class="fa fa-arrow-up")
+            span 回到顶部
+        .menu
+            .menu_list
+                ul
+                    li
+                        a(href="bikeIndex") Home
+                    li(class="active")
+                        a(href="about") About
+                    li
+                        a(href="bikeHistory") History
+                    li
+                        a(href="mail") Mial Us
+        .body
+            .contain
+                .header
+                    h1
+                        a(href="") Bike
+                        span WORLD
+                    .nav_login
+                        span(class="stick stick-1")
+                        span(class="stick stick-2")
+                        span(class="stick stick-3")
+
+
+
+        .con
+            .contain
+                h1 WHO WE ARE
+                each arr in image
+                    .picture
+                        .image
+                            img(src=arr.image)
+                        h3 #{arr.title}
+                        p #{arr.description}
+                h1 SINGLE PAGE
+                .single
+                    img(src="../images/s1.jpg" alt="")
+                    p Suspendisse Ornare Vitae Ex Nec Aliquam. Nunc Et Massa Ut Purus Porta Euismod Quis Eu Erat. Nam Ornare Faucibus Elit Sed Tempor. Quisque Iaculis Odio Nibh, Et Auctor Tellus Rhoncus Vel.
+                    .single_icon
+                        i(class="fa fa-user")
+                        span Admin
+                        i(class="fa  fa-calendar")
+                        span(id="date")
+                        i(class="fa fa-comment-o")
+                        span 20 Comments
+                        i(class="fa fa-heart praise")
+                        span(id="add-num") 3000 likes
+                        span(id="add") +1
+                    p Vestibulum commodo posuere ipsum in elementum. Proin id nibh dictum, ornare purus quis, ullamcorper lectus. Nullam bibendum, dui eu ornare hendrerit, turpis odio tempor nulla, id tempus neque erat finibus risus. Nullam accumsan ipsum at nunc molestie, at pretium ipsum dignissim. Nullam lorem ligula, gravida sit amet tincidunt id, porta non turpis. Vestibulum tincidunt at lectus et egestas. Sed facilisis tempor tellus eget feugiat. Praesent ut est vel metus consequat consequat. Etiam interdum egestas posuere. Quisque at mi eget lorem malesuada ornare non non quam.
+                h1 OUR TEAM
+                .box
+                     each  pic in picture
+                         .bg
+                             .circle
+                                 .img
+                                     img(src=pic.image)
+                                     .icon
+                                         h3 #{pic.title}
+                                         .icons
+                                             i(class="fa fa-facebook")
+                                             i(class="fa fa-twitter")
+                                             i(class="fa fa-github")
+
+
+
+        script(src="../javascripts/jquery-3.3.1.min.js")
+        script(src="../javascripts/common.js")
+        script(src="../javascripts/about.js")

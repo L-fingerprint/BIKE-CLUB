@@ -1,0 +1,29 @@
+
+.picture {
+    width: 30%;
+    margin:1rem  2.5% 0 0;
+    display: inline-block;
+}
+.picture img{
+    width: 100%;
+}
+.picture h3{
+    font-size: 1.4rem;
+    margin: 0.8rem  0 1.2rem 0;
+}
+.picture p{
+    font-size: 1rem;
+    color:#cdcdcd;
+}
+@media(max-width: 414px){
+    .picture {
+        width: 98%;
+        margin:1rem auto ;
+    }
+}
+@media (max-width: 1008px) {
+    .picture {
+        width: 98%;
+        margin: auto;
+    }
+}

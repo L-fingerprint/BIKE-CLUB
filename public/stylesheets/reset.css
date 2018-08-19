@@ -1,0 +1,21 @@
+
+body,h1,h2,h3,h4,h5,h6,ul{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style:none;
+}
+.cleaxfix:after,.cleaxfix:before{
+    content: '';
+    dispaly:table;
+}
+.cleaxfix:after{
+    clear: both;
+}
+.cleaxfix{
+    zoom:1;
+}

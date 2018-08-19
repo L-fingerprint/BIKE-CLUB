@@ -1,0 +1,115 @@
+doctype html
+html
+    head
+        title DC BIKE
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="Content-Type" , content="text/html")
+        link(rel="shortcut icon", href="../images/bitbug_favicon.ico", type="image/x-icon")
+        link(rel="stylesheet", href="../stylesheets/reset.css")
+        link(rel="stylesheet", href="../stylesheets/index.css")
+        link(rel="stylesheet", href="../stylesheets/common.css")
+        link(rel="stylesheet", href="../stylesheets/image.css")
+        link( rel="stylesheet", href="../fonts/font-awesome.min.css")
+    body
+        span#top
+            i(class="fa fa-arrow-up")
+            span 回到顶部
+        .menu
+            .menu_list
+                ul
+                    li(class="active")
+                        a(href="bikeIndex") Home
+                    li
+                        a(href="about")  About
+                    li
+                        a(href="bikeHistory")  History
+                    li
+                        a(href="mail")  Mail Us
+        .body
+            .contain
+                .header
+                    h1
+                        a(href="") Bike
+                        span WORLD
+                    .nav_login
+                        span(class="stick stick-1")
+                        span(class="stick stick-2")
+                        span(class="stick stick-3")
+
+
+                .content
+                    h1 BIKE
+                    .banner
+                        ul(class="wordList")
+                            li(class="onWord")
+                                p PROIN CONVALLIS LEO VITAE LIGULA PORTTITOR
+                            li
+                                p VIVAMUS UT ERAT SIT AMET ELIT MOLLIS ALIQUAM
+                            li
+                                p PROIN CONVALLIS LEO VITAE LIGULA PORTTITOR
+                            li
+                                p VIVAMUS UT ERAT SIT AMET ELIT MOLLIS ALIQUAM
+                            li
+                                p PROIN CONVALLIS LEO VITAE LIGULA PORTTITOR
+                            li
+                                p VIVAMUS UT ERAT SIT AMET ELIT MOLLIS ALIQUAM
+                    .more
+                        a(href="") More
+
+                    .icon
+                        i(class="fa fa-facebook")
+                        i(class="fa fa-twitter")
+                        i(class="fa fa-rss")
+                        i(class="fa fa-vk")
+        .con
+            .contain
+                h1 OUR SERVICES
+                .thoumbs
+                    .img
+                        i(class="fa fa-male")
+                    h3 Praesent Tempor Purus
+                    p Donec non nibh in dui sagittis finibus. Duis suscipit, arcu vel rhoncus molestie, ipsum velit mattis nibh, id congue lacus lorem a elit.
+                .thoumbs
+                    .img
+                        i(class="fa fa-bicycle")
+                    h3 Praesent Tempor Purus
+                    p Donec non nibh in dui sagittis finibus. Duis suscipit, arcu vel rhoncus molestie, ipsum velit mattis nibh, id congue lacus lorem a elit.
+                .thoumbs
+                    .img
+                        i(class="fa fa-cog")
+                    h3 Praesent Tempor Purus
+                    p Donec non nibh in dui sagittis finibus. Duis suscipit, arcu vel rhoncus molestie, ipsum velit mattis nibh, id congue lacus lorem a elit.
+                .thoumbs
+                    .img
+                        i(class="fa fa-female")
+                    h3 Praesent Tempor Purus
+                    p Donec non nibh in dui sagittis finibus. Duis suscipit, arcu vel rhoncus molestie, ipsum velit mattis nibh, id congue lacus lorem a elit.
+        .callback
+            .contain
+                .callback_content
+                    h1 WE ARE COMMITTED TO DEVELOP THE SPORT OF TRIATHLON
+                    p Donec viverra enim nunc, sit amet ultricies dolor placerat vestibulum. Donec id dapibus dolor. Praesent elementum ipsum fringilla ullamcorper facilisis. Morbi blandit tortor molestie ex dignissim, vitae blandit metus ullamcorper. Praesent eleifend risus quam, et aliquet eros tristique a. Duis rhoncus auctor urna, id tristique quam gravida in.
+                    .word
+                        a(href="") Read More
+        .con
+            .contain
+                h1 RECENT RIDES
+                each arr in image
+                    .picture
+                        .image
+                            img(src=arr.image)
+                        h3 #{arr.title}
+                        p #{arr.description}
+        .con
+            div#nextPage.contain
+    script(src="../javascripts/jquery-3.3.1.min.js")
+    script(src="../javascripts/indexAjax.js")
+    script(src="../javascripts/jquery.smoove.js")
+    script(src="../javascripts/index.js")
+    script(src="../javascripts/common.js")
+
+
+
+
+

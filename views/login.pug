@@ -1,0 +1,76 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="Content-Type" , content="text/htm")
+        title BC BIKE
+        link(rel="shortcut icon", href="../images/bitbug_favicon.ico", type="image/x-icon")
+        link(rel="stylesheet", href="../stylesheets/reset.css")
+        link(rel="stylesheet", href="../stylesheets/login.css")
+        link( rel="stylesheet", href="../fonts/font-awesome.min.css")
+        link(href='http://cdn.webfont.youziku.com/webfonts/nomal/121649/45410/5b667c10f629d818d80f5a78.css' rel='stylesheet' type='text/css')/
+        link(href='http://cdn.webfont.youziku.com/webfonts/nomal/121649/45817/5b667b3af629d818d80f5a77.css' rel='stylesheet' type='text/css')/
+    body
+
+        div(class="header")
+            h1 Profile Login Form
+        div(class="content")
+            div(class="wrapper" id="join")
+                div(class="wrapper_con")
+                    div(class="login_img")
+                        img(src="../images/bike.png" , alt="")
+                    form(action="/login" , class="login_form" , method="post" , id='loginForm')
+                        input(type="hidden", id="isRegister", value=isRegister)
+                        h2 login
+                        p
+                            label Your email or username
+                            i(class=['fa','fa-user','icon'])
+                            input(type="text" , placeholder="myusername or myemail@email.com", name="name")/
+                        p
+                            label Your password
+                            i(class=['fa','fa-key','icon'])
+                            input(type="password" , placeholder="eg:lxf1234", name="psd")/
+                        div(class="errors") #{errors}
+                        p
+                            input(type="checkbox" , class="checkbox")/
+                            label Keep me logged in
+                        p(class="p_btn")
+                            input(type="submit" , value="login", class="button")/
+                        p(class="p_link")
+                            span Not a member yet ?
+                            span(onclick="signIn()" class="btn") Join us
+            div(class=['wrapper','wrapper_sign'] , id="sign")
+                div(class="wrapper_con")
+                    div(class="login_img")
+                        img(src="../images/bike.png" , alt="")
+                    form(action="/register", class="login_form", method="post")
+                        h2 sign in
+                        p
+                            label Your  username
+                            i(class=['fa', 'fa-user', 'icon'])
+                            input(type="text" , placeholder="myusername", name="name" , id="username" )/
+                            #username_msg
+                        p
+                            label Your email
+                            i(class=['fa', 'fa-envelope', 'icon'])
+                            input(type="text" , placeholder="eg:lxf1234@1234567" , name="email", id='email')/
+                            #email_msg
+                        p
+                            label Your password
+                            i(class=["fa", "fa-key", "icon"])
+                            input(type="password" , placeholder="eg:lxf1234", name="psd", id="password")/
+                            #password_msg
+                        p
+                            label Please confirm your password
+                            i(class=['fa', 'fa-key', 'icon'])
+                            input(type="password" , placeholder="eg:lxf1234", name="psd", id="repassword")/
+                            #repassword_msg
+                        p(class="p_btn")
+                            input(type="submit"  value="sing in" class="button")/
+                        p(class="p_link")
+                            span you are my one of the numbers now!
+        script(src='../javascripts/jquery-3.3.1.min.js')
+        script(src='../javascripts/login.js')
+        script(src='../javascripts/login_register.js')
+

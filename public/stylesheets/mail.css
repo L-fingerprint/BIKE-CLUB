@@ -1,0 +1,167 @@
+#zoom {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    display: none;
+}
+#wrapper {
+    background: url("../images/4.jpg") no-repeat;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 0.8em;
+    background-size: cover;
+}
+#content {
+    text-align: center;
+}
+#view {
+    width: 100%;
+    margin: auto;
+}
+#view img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,.6);
+}
+#thumbs {
+    position: relative;
+    width: 70%;
+    margin: 20px auto;
+}
+
+#nav-left-thumbs {
+    left: -3rem;
+}
+
+#nav-right-thumbs {
+    right:-3rem;
+}
+#nav-left-thumbs, #nav-right-thumbs {
+    position: absolute;
+    top: 2rem;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,.6);
+    font-size: 1em;
+    font-weight: bold;
+    color: #999;
+    text-shadow: 0 0 10px rgba(0,0,0,.5);
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+#nav-left-thumbs:hover, #nav-right-thumbs:hover {
+    background: lightgrey;
+}
+
+#pics-thumbs {
+    position: relative;
+    padding: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    transition-duration: .8s;
+}
+#pics-thumbs img {
+    padding: 5px;
+    margin: 0 2px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,.6);
+    cursor: pointer;
+    height: 5rem;
+    transition-duration:0.5s;
+}
+.mail{
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 2rem 0 ;
+    font-size: 0;
+}
+.mail h3{
+    color: #f35041;
+    font-size:2rem;
+    margin-bottom: 2em;
+}
+.mail_left p{
+    margin-bottom: 2em;
+    line-height: 1.55em;
+}
+.mail_left{
+    display: inline-block;
+    color:#999999;
+    font-size:0.9rem;
+}
+.mail_left .mail_icon i{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    background: red;
+    color: #fff;
+    line-height: 2rem;
+    margin-right: 15px;
+}
+.mail_icon li{
+    margin-bottom:2em;
+}
+.mail_right{
+    display: inline-block;
+}
+.mail_right input{
+    padding: 0 10px;
+    border: 2px solid #999999;
+    width: 88%;
+    height: 2rem;
+    margin-bottom: 1.4rem;
+    outline: none;
+}
+.mail_right .message{
+    height: 3.8rem;
+    padding: 0 10px;
+    width: 88%;
+    border:2px solid #999999 ;
+    margin-bottom: 1.4rem;
+    font-family: "Roboto Condensed", sans-serif;
+    outline:none;
+    font-size: 0.9rem;
+
+}
+.mail_right .sub{
+    width: 5rem;
+    border-color: red;
+    color:red;
+    background: #fff;
+    transition: all0 .5s;
+}
+.mail_right .sub:hover{
+    background: red;
+    color:#fff;
+}
+body>h3{
+    width: 88%;
+    text-align: center;
+    color:#f35041;
+    font-size: 2rem;
+    margin: 2rem auto;
+}
+@media(min-width: 960px){
+    .mail_right{
+        width: 48%;
+        margin-left: 2%;
+    }
+    .mail_left{
+        width: 48%;
+        margin-right: 2%;
+    }
+}
+@media (min-width:200px) {
+    .mail h3{
+        color: #f35041;
+        font-size:1.4rem;
+        margin-bottom: 1em;
+    }
+}

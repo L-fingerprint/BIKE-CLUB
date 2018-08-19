@@ -1,0 +1,242 @@
+.content {
+    width: 60%;
+    margin:auto;
+}
+.banner{
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+.more a {
+    display: block;
+    width: 22%;
+    border: 2px solid #f35041;
+    text-align: center;
+    color: #fff;
+    transition: all 1s;
+    margin: auto;
+    font-size: 1.4rem;
+}
+.more a:hover{
+    background: #f35041;
+}
+.banner .wordList{
+    height: 2rem;
+    z-index: 10;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.wordList >.onWord{
+    display: inline;
+}
+.wordList li{
+     display: none;
+ }
+.icon{
+    width: 50%;
+    height: 40px;
+    margin: 5% auto 5%;
+}
+.content h1{
+    color:#fff;
+    width: 88%;
+    font-size: 10vw;
+    letter-spacing: 10px;
+    margin: 8% auto 0;
+    text-align: center;
+}
+.icon i {
+    color: #fff;
+    float: left;
+    width: 20%;
+    margin-right: 5%;
+    font-size: 2rem;
+    text-align: center;
+    transition: all 1s;
+}
+.icon i:hover {
+    color: #9d9d9d;
+    font-weight: 200;
+}
+.thoumbs{
+    width: 22%;
+    display: inline-block;
+    margin-right: 3%;
+}
+.thoumbs .img{
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+    margin:2.5rem auto 2.2rem;
+    text-align: center;
+    line-height: 6.5rem;
+    transition: all 1s;
+    font-size:5rem;
+    color: #dadfe2;
+}
+.thoumbs .img:hover{
+    background: #f35041;
+    font-size: 2rem;
+    color:#fff;
+}
+.thoumbs h3{
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+.thoumbs p{
+    font-size: 1.1rem;
+    text-align:center;
+    color: #cdcdcd;
+}
+.icon i {
+    color: #fff;
+    float: left;
+    width: 20%;
+    margin-right: 5%;
+    font-size: 1.8rem;
+    text-align: center;
+    transition: all 1s;
+}
+ .callback{
+     width: 100%;
+     background: url(../images/4.jpg) no-repeat scroll;
+     background-size: cover;
+     color:#fff;
+ }
+ .callback_content {
+     padding: 2rem 0 0  0;
+ }
+ .callback_content h1{
+     width: 100%;
+     color: #fff;
+     font-size: 2.4rem;
+     margin: 1rem 0;
+     text-align: left;
+ }
+ .callback_content p{
+     margin: 1rem 0;
+     font-size: 1.4rem;
+ }
+ .word a{
+     margin:1.4rem 0 ;
+     display: inline-block;
+     width: 12%;
+     font-size: 1.2rem;
+     border: 2px solid #fff;
+     color: #fff;
+     text-align: center;
+     transition: all 500ms;
+     line-height: 2.4rem;
+ }
+ .word a:hover{
+     background: #fff;
+     color: #000;
+ }
+@media (min-width: 960px) {
+    .more a {
+        height: 2rem;
+        margin-top: 1.7rem;
+        line-height: 2rem;
+    }
+    .thoumbs {
+        width: 23%;
+        margin-right: 2%;
+    }
+
+}
+@media (max-width: 1008px) {
+    .thoumbs {
+        width: 48%;
+        margin-right: 2%;
+    }
+}
+@media(max-width: 414px){
+    .body{
+        background-position: bottom;
+    }
+    .content {
+        width: 300px;
+        height: 300px;
+    }
+    .content h1{
+
+        width: 300px;
+        height: 100px;
+        font-size: 80px;
+        letter-spacing: 10px;
+        margin-top: 50px;
+    }
+    .banner{
+        width: 300px;
+        height: 50px;
+    }
+    .banner .wordList{
+        width: 300px;
+        height: 50px;
+        font-size: 12px;
+    }
+    .more a{
+        font-size: 16px;
+        width: 55px;
+        height: 30px;
+        line-height: 30px;
+        letter-spacing: 2px;
+        margin:20px auto 0;
+     }
+     .icon{
+         width: 200px;
+         height: 40px;
+         margin: 30px auto 0;
+     }
+     .icon i{
+         font-size: 1.4rem;;
+         width: 40px;
+         height: 40px;
+         margin-right: 10px;
+         line-height: 40px;
+     }
+
+    /*.con h1{*/
+        /*font-size: 1.4rem;*/
+        /*margin: 1rem auto 1.2rem;*/
+    /*}*/
+    .thoumbs{
+        width: 98%;
+        margin: auto;
+    }
+
+    .callback_content {
+        padding: 1.4rem 0 0.5rem 0 ;
+    }
+    .callback_content h1{
+        font-size: 1.4rem;
+    }
+    .callback_content p{
+        margin: 0.8rem 0;
+        font-size: 0.8rem;
+    }
+    .word a{
+        font-size: 10px;
+        width: 90px;
+        height: 30px;
+        line-height: 30px;
+        letter-spacing: 2px;
+        margin:20px auto 0;
+        display: inline-block;
+        border: 2px solid #fff;
+        color: #fff;
+        text-align: center;
+        transition: all 500ms;
+    }
+    .word a:hover{
+        background: #fff;
+        color: #000;
+    }
+    .picture {
+        width: 98%;
+        margin:1rem auto ;
+    }
+}
+
+

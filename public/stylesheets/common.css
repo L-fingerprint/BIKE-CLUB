@@ -1,0 +1,432 @@
+.body{
+    background: linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/1.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    color: #fff;
+    font-size: 62.5%;
+}
+.con{
+    width: 100%;
+    font-size: 0;
+}
+ h1 {
+    width: 60%;
+    color: #f35041;
+    text-align: center;
+}
+.contain{
+    width: 88%;
+    margin: auto;
+    position: relative;
+}
+.menu{
+    width: 100%;
+    display: none;
+    padding: 50px 0 50px 0;
+    height: 30px;
+}
+.sty {
+    display: block;
+}
+.menu_list{
+    width: 50%;
+    margin: auto;
+
+}
+.menu .active a{
+    color: red;
+}
+.menu li{
+    float: left;
+    width: 25%;
+}
+.menu a{
+    font-family:"Arial Rounded MT Bold";
+    font-size: 1.6rem;
+    color: #000;
+    text-align: center;
+}
+.menu a:hover{
+    color:red;
+}
+.header{
+    height: 150px;
+}
+.header h1{
+    text-align: left;
+    color:#fff;
+    float: left;
+    width: 20%;
+}
+.header h1 a{
+    display: block;
+    color: #fff;
+    font-size: 4.5rem;
+    font-weight: 400;
+}
+.header h1>span{
+    display: block;
+    font-size: 1rem;
+    letter-spacing: 1.26rem;
+    margin-top: -1.2rem;
+}
+.nav_login {
+    position: absolute;
+    right: 0;
+    width: 5rem;
+    height: 6rem;
+    margin: 10px 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.nav_login .stick {
+    width: 80px;
+    height: 8px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    display: inline-block;
+}
+.stick:last-child {
+    margin-bottom: 0;
+}
+.stick-1.open {
+    animation: stick-1-open .6s ease-out forwards;
+}
+.stick-2.open {
+    animation: stick-2-open .6s linear forwards;
+}
+.stick-3.open {
+    animation: stick-3-open .6s linear forwards;
+}
+@keyframes stick-1-open {
+    0% {
+        width: 80px;
+    }
+    40% {
+        width: 8px;
+        transform: translate(40px, 0px);
+    }
+    75%,
+    80% {
+        width: 8px;
+        transform: translate(40px, -50px);
+        animation-timing-function: cubic-bezier(0, 1, 1, 1);
+    }
+    100% {
+        width: 8px;
+        transform: translate(35px, 46px);
+    }
+}
+@keyframes stick-2-open {
+    80% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    100% {
+
+        transform: translate(8px, 0px) rotate(40deg);
+    }
+}
+@keyframes stick-3-open {
+    80% {
+
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    100% {
+        transform: translate(8px, -23px) rotate(-40deg);
+    }
+}
+.stick-1.close {
+    width: 8px;
+    transform: translate(27px, 26px);
+    animation: stick-1-close .6s ease-out forwards;
+}
+.stick-2.close {
+    transform: translate(0px, 0px) rotate(40deg);
+    animation: stick-2-close .6s ease-out forwards;
+}
+.stick-3.close {
+    transform: translate(0px, -23px) rotate(-40deg);
+    animation: stick-3-close .6s ease-out forwards;
+}
+@keyframes stick-1-close {
+    0%,
+    70% {
+        width: 0;
+    }
+    100% {
+        width: 80px;
+        transform: translate(0, 0);
+    }
+}
+@keyframes stick-2-close {
+    0% {
+        width: 80px;
+    }
+    20% {
+
+        width: 8px;
+        transform: translate(0, 0px) rotate(40deg);
+    }
+    40% {
+        width: 0;
+    }
+    65% {
+        transform: translate(0, -70px);
+        animation-timing-function: cubic-bezier(0, 1, 1, 1);
+    }
+    80% {
+        width: 0;
+    }
+    100% {
+        width: 80px;
+        transform: translate(0, 0px);
+    }
+}
+@keyframes stick-3-close {
+    0% {
+        width: 80px;
+    }
+    20% {
+        width: 8px;
+        transform: translate(0, -23px) rotate(-40deg);
+    }
+    65% {
+        transform: translate(0, -93px);
+        animation-timing-function: cubic-bezier(0, 1, 1, 1);
+    }
+    90% {
+        width: 8px;
+    }
+    100% {
+        width: 80px;
+        transform: translate(0, 0px);
+    }
+}
+@media (max-width: 414px) {
+    #top{
+        right: 10px;
+        bottom: 6rem;
+        font-size: 0.6rem;
+    }
+    .header h1{
+        margin: 10px 0 0 20px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        color:#fff;
+    }
+    .header h1 a{
+        width: 50px;
+        height: 40px;
+        line-height: 40px;
+        font-size:40px;
+    }
+    .header h1>span{
+        line-height: 15px;
+        width: 50px;
+        height: 15px;
+        font-size:10px;
+        letter-spacing: 10px;
+        margin-top: 4px;
+    }
+    .nav_login {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav_login .stick {
+        width: 50px;
+        height: 5px;
+        margin-bottom: 8px;
+    }
+    @keyframes stick-1-open {
+        0% {
+            width: 50px;
+        }
+        40% {
+            width: 8px;
+            transform: translate(40px, 0px);
+        }
+        75%,
+        80% {
+            width: 8px;
+            transform: translate(40px, -50px);
+            animation-timing-function: cubic-bezier(0, 1, 1, 1);
+        }
+        100% {
+            width: 0;
+            transform: translate(35px, 46px);
+        }
+    }
+    @keyframes stick-2-open {
+        80% {
+            transform: translate(0px, 0px) rotate(0deg);
+        }
+        100% {
+
+            transform: translate(1px, -2px) rotate(40deg);
+        }
+    }
+    @keyframes stick-3-open {
+        80% {
+
+            transform: translate(0px, 0px) rotate(0deg);
+        }
+        100% {
+            transform: translate(0px, -15px) rotate(-40deg);
+        }
+    }
+    @keyframes stick-1-close {
+        0%,
+        70% {
+            width: 0;
+        }
+        100% {
+            width: 50px;
+            transform: translate(0, 0);
+        }
+    }
+    @keyframes stick-2-close {
+        0% {
+            width: 50px;
+        }
+        20% {
+
+            width: 8px;
+            transform: translate(0, 0px) rotate(40deg);
+        }
+        40% {
+            width: 0;
+        }
+        65% {
+            transform: translate(0, -70px);
+            animation-timing-function: cubic-bezier(0, 1, 1, 1);
+        }
+        80% {
+            width: 0;
+        }
+        100% {
+            width: 50px;
+            transform: translate(0, 0px);
+        }
+    }
+    @keyframes stick-3-close {
+        0% {
+            width: 50px;
+        }
+        20% {
+            width: 8px;
+
+            transform: translate(0, -23px) rotate(-40deg);
+        }
+        65% {
+            transform: translate(0, -93px);
+            animation-timing-function: cubic-bezier(0, 1, 1, 1);
+        }
+        90% {
+            width: 8px;
+        }
+        100% {
+            width: 50px;
+            transform: translate(0, 0px);
+        }
+    }
+    .menu{
+        width: 100%;
+        display: none;
+        padding: 25px 0;
+        height: 20px;
+    }
+    .sty {
+        display: block;
+    }
+    .menu_list{
+        width: 70%;
+        margin: auto;
+
+    }
+    .menu .active a{
+        color: red;
+    }
+    .menu li{
+        float: left;
+        width: 25%;
+    }
+    .menu a{
+        font-family:"Arial Rounded MT Bold";
+        font-size: 0.8rem;
+        color: #000;
+        text-align: center;
+    }
+    .menu a:hover{
+        color:red;
+    }
+}
+ #top{
+     width: 5rem;
+     height:5rem;
+     background-size: 100% 100%;
+     position: fixed;
+     display: none;
+     font-size: 0.8rem;
+     color:#ffc197;
+     text-align: center;
+     z-index: 999;
+ }
+
+#top>i{
+    font-size: 2rem;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    margin: 12% 33%;
+
+}
+@media (min-width: 400px) {
+    #top{
+        right: 10px;
+        bottom: 30px;
+    }
+    .menu a{
+        font-family:"Arial Rounded MT Bold";
+        font-size: 0.8rem;
+        color: #000;
+        text-align: center;
+    }
+    .header h1{
+        margin:0;
+    }
+}
+@media (min-width: 768px){
+     h1{
+        font-size: 2.6rem;
+        margin:3rem auto;
+    }
+    .header h1{
+        margin:0;
+    }
+    .menu a{
+        font-family:"Arial Rounded MT Bold";
+        font-size: 1.4rem;
+        color: #000;
+        text-align: center;
+    }
+}
+@media (max-width: 560px){
+    h1{
+        font-size: 1.6rem;
+        margin: 1rem auto;
+    }
+    .header{
+        height: 100px;
+    }
+
+
+}
